@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/fonts">
+        <file alias="NotoMono-Regular.ttf">resources/fonts/NotoMono-Regular.ttf</file>
+        <file alias="NotoSans-Regular.ttf">resources/fonts/NotoSans-Regular.ttf</file>
+        <file alias="NotoSerif-Regular.ttf">resources/fonts/NotoSerif-Regular.ttf</file>
+    </qresource>
+</RCC>
