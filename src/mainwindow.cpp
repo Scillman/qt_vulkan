@@ -12,6 +12,11 @@ MainWindow::~MainWindow()
 {
 }
 
+QString MainWindow::title() const noexcept
+{
+    return QString(QObject::tr("AuroraVK - Qt Test Project"));
+}
+
 void MainWindow::preRender()
 {
 
@@ -26,7 +31,7 @@ void MainWindow::setActiveView(ActiveView view)
 {
     qDebug() << "View:" << view;
 
-    if (view == ActiveViewClass::ActiveViewEnum::Dashboard)
+    if (view == ActiveView::Dashboard)
     {
         qDebug() << "DASHBOARD !!";
     }

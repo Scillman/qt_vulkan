@@ -14,11 +14,7 @@ public:
     enum class ActiveViewEnum : int
     {
         Dashboard = 0,
-        Monitor,
-        Messenger,
-        Trend,
-        Designer,
-        Flasher
+        Demo
     };
     Q_ENUM(ActiveViewEnum);
 };
@@ -36,6 +32,8 @@ public:
 
     void preRender();
     void postRender();
+
+    QString title() const noexcept;
 
     Q_INVOKABLE void setActiveView(ActiveView view);
 

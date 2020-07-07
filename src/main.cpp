@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     MainWindow window(viewer.rootContext());
     window.preRender();
 
-    viewer.setTitle("AuroraVK - Qt Test Project");
+    viewer.setTitle(window.title());
     viewer.setSource(QUrl(QLatin1String("qrc:/main.qml")));
     viewer.setResizeMode(QQuickView::SizeRootObjectToView);
     viewer.show();
